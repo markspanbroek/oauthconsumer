@@ -40,7 +40,9 @@
     didFailSelector = failSelector;
     
     [request prepare];
-    
+
+    NSURLResponse *response;
+    NSError *error;
     responseData = [NSURLConnection sendSynchronousRequest:request
                                          returningResponse:&response
                                                      error:&error];
