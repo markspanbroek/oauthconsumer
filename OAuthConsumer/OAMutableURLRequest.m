@@ -57,7 +57,7 @@ signatureProvider:(id<OASignatureProviding, NSObject>)aProvider
 			token = aToken;
 		
 		if (aRealm == nil)
-			realm = [[NSString alloc] initWithString:@""];
+			realm = @"";
 		else 
 			realm = aRealm;
 		
@@ -96,7 +96,7 @@ signatureProvider:(id<OASignatureProviding, NSObject>)aProvider
 			token = aToken;
 		
 		if (aRealm == nil)
-			realm = [[NSString alloc] initWithString:@""];
+			realm = @"";
 		else 
 			realm = aRealm;
 		
@@ -172,7 +172,7 @@ signatureProvider:(id<OASignatureProviding, NSObject>)aProvider
 
 - (void)_generateTimestamp 
 {
-    timestamp = [NSString stringWithFormat:@"%d", time(NULL)];
+    timestamp = [NSString stringWithFormat:@"%li", time(NULL)];
 }
 
 - (void)_generateNonce 

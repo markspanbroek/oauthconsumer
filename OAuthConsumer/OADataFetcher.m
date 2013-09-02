@@ -51,16 +51,22 @@
         OAServiceTicket *ticket= [[OAServiceTicket alloc] initWithRequest:request
                                                                  response:response
                                                                didSucceed:NO];
+        #pragma clang diagnostic push
+        #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
         [delegate performSelector:didFailSelector
                        withObject:ticket
                        withObject:error];
+        #pragma clang diagnostic pop
     } else {
         OAServiceTicket *ticket = [[OAServiceTicket alloc] initWithRequest:request
                                                                   response:response
                                                                 didSucceed:[(NSHTTPURLResponse *)response statusCode] < 400];
+        #pragma clang diagnostic push
+        #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
         [delegate performSelector:didFinishSelector
                        withObject:ticket
                        withObject:responseData];
+        #pragma clang diagnostic pop
     }   
 }
 
