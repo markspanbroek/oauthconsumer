@@ -137,43 +137,46 @@
 - (void)verifyDefaultParametersForRequest:(NSMutableURLRequest *)request {
     STAssertNotNil([request parameters],
                    @"A request with parameters should not return nil.");
-    STAssertEqualObjects([[[request parameters] objectAtIndex:0] name],
+    OARequestParameter *parameter0 = [[request parameters] objectAtIndex:0];
+    STAssertEqualObjects([parameter0 name],
                          @"first_name",
                          @"first_name param returned: %@. Expected: first_name.",
-                         [[[request parameters] objectAtIndex:0] name]);
-    STAssertEqualObjects([[[request parameters] objectAtIndex:0] value],
+                         [parameter0 name]);
+    STAssertEqualObjects([parameter0 value],
                          @"fake",
                          @"first_name param value returned: %@. Expected: fake.",
-                         [[[request parameters] objectAtIndex:0] value]);
-    STAssertEqualObjects([[[request parameters] objectAtIndex:1] name],
+                         [parameter0 value]);
+    OARequestParameter *parameter1 = [[request parameters] objectAtIndex:1];
+    STAssertEqualObjects([parameter1 name],
                          @"last_name",
                          @"last_name param returned: %@. Expected: last_name.",
-                         [[[request parameters] objectAtIndex:1] name]);
-    STAssertEqualObjects([[[request parameters] objectAtIndex:1] value],
+                         [parameter1 name]);
+    STAssertEqualObjects([parameter1 value],
                          @"steve",
                          @"last_name param value returned: %@. Expected: steve.",
-                         [[[request parameters] objectAtIndex:1] value]);
+                         [parameter1 value]);
 }
 
 - (void)verifyModifiedParametersForRequest:(NSMutableURLRequest *)request {
     STAssertNotNil([request parameters],
                    @"A request with parameters should not return nil.");
-    STAssertEqualObjects([[[request parameters] objectAtIndex:0] name],
+    OARequestParameter *parameter0 = [[request parameters] objectAtIndex:0];
+    STAssertEqualObjects([parameter0 name],
                          @"address",
                          @"address param returned: %@. Expected: address.",
-                         [[[request parameters] objectAtIndex:0] name]);
-    STAssertEqualObjects([[[request parameters] objectAtIndex:0] value],
+                         [parameter0 name]);
+    STAssertEqualObjects([parameter0 value],
                          @"123 Main Street",
                          @"address param value returned: %@. Expected: 123 Main Street.",
-                         [[[request parameters] objectAtIndex:0] value]);
-    STAssertEqualObjects([[[request parameters] objectAtIndex:1] name],
+                         [parameter0 value]);
+    OARequestParameter *parameter1 = [[request parameters] objectAtIndex:1];STAssertEqualObjects([parameter1 name],
                          @"city",
                          @"city param returned: %@. Expected: city.",
-                         [[[request parameters] objectAtIndex:1] name]);
-    STAssertEqualObjects([[[request parameters] objectAtIndex:1] value],
+                         [parameter1 name]);
+    STAssertEqualObjects([parameter1 value],
                          @"Hometown",
                          @"city param value returned: %@. Expected: Hometown.",
-                         [[[request parameters] objectAtIndex:1] value]);
+                         [parameter1 value]);
 }
 
 - (void)verifyEmptyParametersForRequest:(NSMutableURLRequest *)request {
