@@ -108,4 +108,14 @@
 						 @"Authorization header doesn't match expected value.");
 }
 
+- (void)testSignatureBaseStringWithOptionalOAuthParameters {
+    [hmacSha1Request setOAuthParameterName:@"oauth_callback" withValue:@"myurlhandler:oauth"];
+   	[hmacSha1Request setOAuthParameterName:@"oauth_verifier" withValue:@"abc123"];
+    [hmacSha1Request prepare];
+
+    STAssertEqualObjects([hmacSha1Request _signatureBaseString],
+                         @"GET&http%3A%2F%2Fphotos.example.net%2Fphotos&file%3Dvacation.jpg%26oauth_callback%3Dmyurlhandler%253Aoauth%26oauth_consumer_key%3Ddpf43f3p2l4k3l03%26oauth_nonce%3Dkllo9940pd9333jh%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1191242096%26oauth_token%3Dnnch734d00sl2jdk%26oauth_verifier%3Dabc123%26oauth_version%3D1.0%26size%3Doriginal",
+                         @"Signature Base String with does not match expected value.");
+}
+
 @end
