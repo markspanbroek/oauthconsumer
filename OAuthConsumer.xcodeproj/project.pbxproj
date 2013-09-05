@@ -71,9 +71,6 @@
 		4571A8840DAC519C00E2A30E /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
 		4571A8850DAC519C00E2A30E /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
 		4D5CF2F917D7852C00645E6B /* libOAuthConsumer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOAuthConsumer.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D5CF2FD17D7852C00645E6B /* OAuthConsumer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OAuthConsumer-Prefix.pch"; sourceTree = "<group>"; };
-		4D5CF2FE17D7852C00645E6B /* OAuthConsumer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
-		4D5CF30017D7852C00645E6B /* OAuthConsumer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAuthConsumer.m; sourceTree = "<group>"; };
 		4DA2AFF617D4980300DB8041 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		4DA2AFF817D4980300DB8041 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4DA2AFFA17D4980300DB8041 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -169,7 +166,6 @@
 				089C1665FE841158C02AAC07 /* Resources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				4DA2B02217D498CF00DB8041 /* OAuthConsumerTests */,
-				4D5CF2FB17D7852C00645E6B /* OAuthConsumer */,
 				4DA2AFF517D4980300DB8041 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 				FCAAF0760CC95C5E00C52F82 /* OAuthConsumerTestSuite-Info.plist */,
@@ -256,24 +252,6 @@
 				4571A8840DAC519C00E2A30E /* Base64Transcoder.c */,
 			);
 			path = Crypto;
-			sourceTree = "<group>";
-		};
-		4D5CF2FB17D7852C00645E6B /* OAuthConsumer */ = {
-			isa = PBXGroup;
-			children = (
-				4D5CF2FE17D7852C00645E6B /* OAuthConsumer.h */,
-				4D5CF30017D7852C00645E6B /* OAuthConsumer.m */,
-				4D5CF2FC17D7852C00645E6B /* Supporting Files */,
-			);
-			path = OAuthConsumer;
-			sourceTree = "<group>";
-		};
-		4D5CF2FC17D7852C00645E6B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4D5CF2FD17D7852C00645E6B /* OAuthConsumer-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4DA2AFF517D4980300DB8041 /* Frameworks */ = {
