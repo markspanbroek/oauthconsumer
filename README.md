@@ -8,10 +8,10 @@ The original OSX code can be found here: http://oauth.googlecode.com/svn/code/ob
 
 Usage
 -----
-To use this library in your app, you need to add the XCode project from this repository
-to your app project. Additionally, you need to set the User Header Search Path to include
-the folder where the OAuthConsumer header files are located, for instance:
+To use this library in your app, you need to follow these steps:
 
-	${PROJECT_DIR}/OAuthConsumer
+   * Add the XCode project from this repository to your app project. 
+   * Set the User Header Search Path in XCode to include the folder where the OAuthConsumer header files are located, for instance: ${PROJECT_DIR}/OAuthConsumer
+   * Add -ObjC to Other Linker Flags in XCode.
 
 For more usage documentation, see: http://code.google.com/p/oauthconsumer/.
