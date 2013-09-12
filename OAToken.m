@@ -96,4 +96,10 @@
 	return(0);
 }
 
++ (void)removeUserDefaultsWithServiceProviderName:(NSString *)provider prefix:(NSString *)prefix
+{
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:[NSString stringWithFormat:@"OAUTH_%@_%@_KEY", prefix, provider]];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:[NSString stringWithFormat:@"OAUTH_%@_%@_SECRET", prefix, provider]];
+}
+
 @end

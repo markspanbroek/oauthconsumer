@@ -37,5 +37,6 @@
 - (id)initWithUserDefaultsUsingServiceProviderName:(NSString *)provider prefix:(NSString *)prefix;
 - (id)initWithHTTPResponseBody:(NSString *)body;
 - (int)storeInUserDefaultsWithServiceProviderName:(NSString *)provider prefix:(NSString *)prefix;
++ (void)removeUserDefaultsWithServiceProviderName:(NSString *)provider prefix:(NSString *)prefix;
 
 @end
