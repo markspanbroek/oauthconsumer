@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D29198A17E2028D004A09AF /* OAuthConsumer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC53ABB20CD99348001B1B99 /* OAuthConsumer.h */; };
+		4D29198B17E2028D004A09AF /* OAToken.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCAAF07E0CC95E6A00C52F82 /* OAToken.h */; };
+		4D29198C17E2028D004A09AF /* OAConsumer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCAAF2120CC9846D00C52F82 /* OAConsumer.h */; };
+		4D29198D17E2028D004A09AF /* OAMutableURLRequest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCAAF3C50CC9F5B500C52F82 /* OAMutableURLRequest.h */; };
+		4D29198E17E2028D004A09AF /* OAHMAC_SHA1SignatureProvider.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCAAF3590CC9E32E00C52F82 /* OAHMAC_SHA1SignatureProvider.h */; };
+		4D29198F17E2028D004A09AF /* OAPlaintextSignatureProvider.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC98DE010CD1659000453F6C /* OAPlaintextSignatureProvider.h */; };
+		4D29199017E2028D004A09AF /* OARequestParameter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCAAF3BB0CC9F06C00C52F82 /* OARequestParameter.h */; };
+		4D29199117E2028D004A09AF /* OAServiceTicket.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCB87CA70CDFF1A000C75049 /* OAServiceTicket.h */; };
+		4D29199217E2028D004A09AF /* OADataFetcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCB87CB00CDFF40A00C75049 /* OADataFetcher.h */; };
+		4D29199317E2028D004A09AF /* OAAsynchronousDataFetcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DFA860F0EFCF7B200F849D3 /* OAAsynchronousDataFetcher.h */; };
+		4D29199417E2028D004A09AF /* OASignatureProviding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC98DD570CD15F0400453F6C /* OASignatureProviding.h */; };
+		4D29199517E2028D004A09AF /* NSString+URLEncoding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCAAF35E0CC9E73200C52F82 /* NSString+URLEncoding.h */; };
+		4D29199617E2028D004A09AF /* NSMutableURLRequest+Parameters.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCAAF3CA0CCA69D600C52F82 /* NSMutableURLRequest+Parameters.h */; };
+		4D29199717E2028D004A09AF /* NSURL+Base.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC98DF550CD19A7C00453F6C /* NSURL+Base.h */; };
 		4D5CF2FA17D7852C00645E6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA2AFFA17D4980300DB8041 /* Foundation.framework */; };
 		4D5CF31317D788BD00645E6B /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAAF07F0CC95E6A00C52F82 /* OAToken.m */; };
 		4D5CF31517D788BD00645E6B /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAAF2130CC9846D00C52F82 /* OAConsumer.m */; };
@@ -55,6 +69,20 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				4D29198A17E2028D004A09AF /* OAuthConsumer.h in CopyFiles */,
+				4D29198B17E2028D004A09AF /* OAToken.h in CopyFiles */,
+				4D29198C17E2028D004A09AF /* OAConsumer.h in CopyFiles */,
+				4D29198D17E2028D004A09AF /* OAMutableURLRequest.h in CopyFiles */,
+				4D29198E17E2028D004A09AF /* OAHMAC_SHA1SignatureProvider.h in CopyFiles */,
+				4D29198F17E2028D004A09AF /* OAPlaintextSignatureProvider.h in CopyFiles */,
+				4D29199017E2028D004A09AF /* OARequestParameter.h in CopyFiles */,
+				4D29199117E2028D004A09AF /* OAServiceTicket.h in CopyFiles */,
+				4D29199217E2028D004A09AF /* OADataFetcher.h in CopyFiles */,
+				4D29199317E2028D004A09AF /* OAAsynchronousDataFetcher.h in CopyFiles */,
+				4D29199417E2028D004A09AF /* OASignatureProviding.h in CopyFiles */,
+				4D29199517E2028D004A09AF /* NSString+URLEncoding.h in CopyFiles */,
+				4D29199617E2028D004A09AF /* NSMutableURLRequest+Parameters.h in CopyFiles */,
+				4D29199717E2028D004A09AF /* NSURL+Base.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
